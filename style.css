@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 5.5rem;
+    background: #54582a;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+nav .hamburger{
+    display: none;
+}
+nav .logo h2{
+    color: rgba(76, 210, 225, 0.821);
+    font-size: 35px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 15px;
+    margin-left: 5px;
+}
+nav .logo{
+    color: #d6d1d1;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    
+}
+
+nav .menu li{
+    list-style: none;
+}
+
+nav .menu li a{
+    text-decoration: none;
+    color: #d6d1d1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+#bg{
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+}
+
+#bg img{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+}
+
+#bg .section{
+    color:antiquewhite;
+    top: 25vh;
+    left: 8vw;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bg .section h2{
+    font-size: 5rem;
+}
+
+#bg .section p{
+    font-size: 2rem;
+}
+
+#brands{
+    /* box-sizing: border-box; */
+    background: #7b7b55;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%;
+    padding: 0 50px;
+    margin: 2px;
+    
+}
+
+#brands img{
+    width: 10vw;
+    min-width: 7vw;
+    height: 10vh;
+    margin: 25px;
+    cursor: pointer;
+}
+
+#top-demand{
+    background:#95c2c3;
+    height: 100vh;
+    /* top: 25vh; */
+    margin: 2px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+#top-demand .heading{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    color:  #1a1919;
+}
+
+#top-demand .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+}
+
+#top-demand .cards .card{
+    margin: 10px;
+    /* height: 30vh; */
+}
+
+#top-demand .cards .card img{
+    height: 20vh;
+    width: auto;
+    border-radius: 0.6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#top-demand .cards .card img:hover{
+    transform: scale(1.1);
+}
+
+.card .container{
+    margin-top: 1rem;
+}
+
+.card .container .explore-more{
+    width: max-content;
+    cursor: pointer;
+}
+
+#app-download{
+    position: relative;
+
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(229, 236, 237);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(127,127,176);
+    background: linear-gradient(90deg, rgba(127,127,176,1) 0%, rgba(13,10,61,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+#app-download .container{
+    position: absolute;
+    left: 10vw;
+
+    font-size: 2rem;
+}
+
+#app-download .appstore-playstore{
+    position: absolute;
+    right: 10vw;
+}
+#app-download .appstore-playstore > img{
+    width: 20vw;
+
+}
+#app-download .appstore-playstore > img:hover{
+    cursor: pointer;
+}
+
+
+footer{
+    position: relative;
+
+    width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: var(--font-family);
+    color: rgb(235, 242, 243);
+    background: rgb(127,127,176);
+    background: linear-gradient(90deg, rgba(127,127,176,1) 0%, rgba(13,10,61,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+footer .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 20vw;
+
+    flex-direction: column;
+
+}
+
+
+footer .social .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+}
+
+footer .social .logo a{
+    color: rgb(255, 254, 246);
+    font-size: 40px;
+}
+
+footer .social > h3,
+footer .social > p{
+    padding: 1rem 0rem;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 35%;
+
+}
+
+footer .links .f-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    flex-direction: column;
+}
+footer .links .f-card li{
+    list-style-type: none;    
+}
